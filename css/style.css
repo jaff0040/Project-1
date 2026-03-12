@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  height: 140vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-size: cover;
+  word-spacing: 3px;
+  background-color:rgb(255, 238, 217) ;
+}
+/* rgba(244, 195, 136, 1) */
+/* rgba(136, 165, 173, 1) */
+/* rgba(240, 180, 108, 1) */
+
+
+.header{
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  float: left;
+  opacity: 0.9;
+  position: fixed;
+}
+
+
+.header-inner{
+  width: 100%;
+  margin: auto;
+  background: rgb(251, 217, 155);
+  height: 100px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+}
+
+.brand-title{
+  font-size: 25px;
+  color: rgb(163, 100, 22);
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.brand-logo{
+  margin-left: 40px;
+  float: left;
+  height: 150px;
+  align-items: center;
+  width: 100px;
+  background-size: cover;
+}
+
+.nav{
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+  float: right;
+  text-transform: uppercase;
+
+}
+
+.nav li{
+  margin-left: 20px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: rgb(163, 100, 22);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav .slash{
+  text-decoration: none;
+  color: rgb(163, 100, 22);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav a:hover{
+  color: #624900;
+}
+
+
+/* ----------Page----------- */
+
+.page{
+  width: 90%;
+  margin: auto;
+}
+
+.hero-grid{
+  display: grid;
+  grid-template-columns: 1fr 0.75fr 1fr;
+  grid-template-rows: 250px 325px;     
+  gap: 25px;
+  padding-top: 140px;
+
+}
+
+.hero-section{
+  background-color:rgb(255, 228, 194) ;
+  padding-bottom: 40px;
+}
+
+.hero-left{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.hero-mid{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+
+}
+
+.hero-right-top{
+  grid-column: 3;
+  grid-row: 1;
+
+}
+
+.hero-right-bottom{
+  grid-column: 3;
+  grid-row: 2;
+
+}
+
+.hero-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  
+}
+
+.hero-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.hero-card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.hero-card:hover::after{
+  background: rgba(0,0,0,0.3);
+}
+
+.hero-left,
+.hero-mid,
+.hero-right-top,
+.hero-right-bottom{
+  height: 100%;
+}
+
+
+
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  background: rgba(0,0,0,0.1);
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  z-index: 2;
+}
+
+.title-left{
+  margin-top: 200px;
+}
+
+
+.hero-overlay.title-right{
+  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-overlay.title-right .btn{
+  margin-left: 40px;
+    align-self: left;
+}
+
+
+.hero-overlay.center{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+
+.sale-title{
+  margin: auto;
+}
+
+.hero-small-title{
+  letter-spacing: 2px;
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-title{
+  font-size: 42px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-sub{
+  margin-top: 10px;
+  font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+.sale-title{
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* ---- Buttons ---- */
+.btn{
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.579);
+  color: #5b3c12;
+  position: relative;
+  z-index: 5;
+}
+
+
+.btn:hover{
+  background: #ffffff; 
+  color: #5b3c12;
+}
+
+
+
+
+/* --------------------- */
+.countdown{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;  
+}
+
+
+.time-box{
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.579);
+  color: #5b3c12;
+}
+
+.time-box:hover{
+  background: #ffffff; 
+  color: #5b3c12;
+}
+
+.time-num{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.time-label{
+  font-size: 11px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/* ------------Latest news--------- */
+.section-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.section-title .line{
+  flex: 1;
+  height: 2px;
+  background: rgba(163, 100, 22, 0.35);
+}
+
+.section-btn{
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: rgb(163, 100, 22);
+  background: rgb(251, 217, 155);
+  border: #624900 1.5px solid;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.section-btn:hover{
+color: #624900;
+  background-color: #ffdb71;
+}
+
+.section-title:hover .line{
+  background: rgba(59, 35, 7, 0.55);
+}
+
+
+.section-title:hover .section-btn{
+  color: #624900;
+  background-color: #ffdb71;
+}
+
+
+
+
+
+
+/* -----------News cards---------- */
+.news-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.news-card{
+  position: relative;
+  height: 380px;
+  overflow: visible;
+  border-radius: 10px;
+}
+
+.news-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.news-date{
+  position: absolute;
+  top: 18px;
+  left: -18px;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background: rgba(255, 236, 160, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #2d1a06;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.14);
+}
+
+
+.news-date .d{
+  font-size: 20px;
+  line-height: 1;
+}
+
+.news-date .m{
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+.news-card:hover .news-date{
+  color: #ffdb71;
+  background-color: #5b3c12;
+}
+
+
+.news-hover{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.news-btn{
+  margin-top: 0;
+  opacity: 0;
+    text-transform: uppercase;
+}
+
+.news-card:hover .news-hover{
+  opacity: 1;
+}
+
+.news-card:hover .news-btn{
+  opacity: 1;
+}
+
