@@ -29,39 +29,36 @@ body{
   width: 100%;
   margin: auto;
   background: rgb(251, 217, 155);
-  height: 100px;
+  height: 70px;
   justify-content: space-between;
   display: flex;
   align-items: center;
 }
 
-.brand{
+.home-icon{
   display: flex;
   align-items: center;
+  margin-left: 40px;
+  color: #5b3c12;
+  font-size: 50px;
 }
 
-.brand-title{
-  font-size: 25px;
-  color: rgb(163, 100, 22);
-  margin-left: 10px;
-  font-weight: 700;
-}
 
-.brand-logo{
+/* .brand-logo{
   margin-left: 40px;
   float: left;
   height: 150px;
   align-items: center;
   width: 100px;
   background-size: cover;
-}
+} */
 
 .nav{
   list-style: none;
   display: flex;
   margin-right: 40px;
   float: right;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
 }
 
@@ -76,12 +73,7 @@ body{
   font-weight: 500;
 }
 
-.nav .slash{
-  text-decoration: none;
-  color: rgb(163, 100, 22);
-  font-size: 20px;
-  font-weight: 700;
-}
+
 
 .nav a:hover{
   color: #624900;
