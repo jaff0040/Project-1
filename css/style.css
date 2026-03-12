@@ -170,6 +170,115 @@ input{
 
 
 
+/* ----------Hero Banner----------- */
+
+
+.store-hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.store-hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.store-hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.store-hero-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+
+
+.store-hero-title{
+    font-size: 44px;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 800;
+    text-transform:uppercase;
+    word-spacing: 10px;
+}
+
+.store-hero-text{
+    color: #f8f1e7;
+    font-size: 22px;
+    line-height: 1.7;
+    margin: 0 auto 35px;
+    width: 80%;
+}
+
+.store-hero-btn{
+    display: inline-block;
+    min-width: 180px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 16px;
+    transition: 0.3s ease;
+}
+
+
+.btn1{
+    background-color: rgb(251, 217, 155);
+    color: #6b4113;
+}
+
+.btn1:hover{
+    background-color: rgb(251, 217, 155);
+    color: #5b3c12;
+    opacity: .7;
+}
+
+.btn2{
+    color: rgb(251, 217, 155);
+    background-color: 5b3c12;
+    border: rgb(251, 217, 155) solid 2px;
+}
+
+.btn2:hover{
+    background-color: rgb(251, 217, 155);
+    color: #6b4113;
+        opacity: .7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
