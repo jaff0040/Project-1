@@ -430,12 +430,136 @@ input{
 
 
 
-/* ----------Page----------- */
+
+
+
+
+/* -------- Featured Furniture Section -------- */
 
 .page{
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+}
+
+.furniture-section{
+  padding: 40px 0 70px;
+  text-align: center;
+}
+
+.furniture-section-title{
+  font-size: 42px;
+  color: #5b3c12;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.furniture-section-line{
+  display: block;
+    width: 170px;
+  height: 3px;
+  background-color: rgb(163, 100, 22);
+  margin: 0 auto 50px;
+}
+
+
+.furniture-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.furniture-card{
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.furniture-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.furniture-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 2;
+}
+
+.furniture-card:hover .furniture-overlay{
+  opacity: 1;
+}
+
+
+.furniture-card-title{
+  font-size: 33px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.furniture-card-text{
+  font-size: 18px;
+  color: #f8f1e7;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.furniture-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.furniture-icons a{
+  width: 50px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #7b4d13;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------Page----------- */
+
+/* .page{
   width: 90%;
   margin: auto;
-}
+} */
 
 .hero-grid{
   display: grid;
@@ -602,278 +726,3 @@ input{
   background: #ffffff; 
   color: #5b3c12;
 }
-
-
-
-
-/* --------------------- */
-.countdown{
-  display: flex;
-  gap: 12px;
-  margin-bottom: 10px;  
-}
-
-
-.time-box{
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.579);
-  color: #5b3c12;
-}
-
-.time-box:hover{
-  background: #ffffff; 
-  color: #5b3c12;
-}
-
-.time-num{
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.time-label{
-  font-size: 11px;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-
-/* ------------Latest news--------- */
-.section-title{
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-  margin-top: 35px;
-}
-
-.section-title .line{
-  flex: 1;
-  height: 2px;
-  background: rgba(163, 100, 22, 0.35);
-}
-
-.section-btn{
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 800;
-  color: rgb(163, 100, 22);
-  background: rgb(251, 217, 155);
-  border: #624900 1.5px solid;
-  padding: 10px 20px;
-  border-radius: 3px;
-}
-
-.section-btn:hover{
-color: #624900;
-  background-color: #ffdb71;
-}
-
-.section-title:hover .line{
-  background: rgba(59, 35, 7, 0.55);
-}
-
-
-.section-title:hover .section-btn{
-  color: #624900;
-  background-color: #ffdb71;
-}
-
-
-
-
-
-/* -------- Featured Furniture Section -------- */
-.furniture-section{
-  padding: 40px 0 70px;
-  text-align: center;
-}
-
-.furniture-section-title{
-  font-size: 42px;
-  color: #2d1a06;
-  margin-bottom: 10px;
-  text-transform: capitalize;
-}
-
-.furniture-section-line{
-  display: block;
-  width: 90px;
-  height: 3px;
-  background-color: rgb(163, 100, 22);
-  margin: 0 auto 45px;
-}
-
-.furniture-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.furniture-card{
-  position: relative;
-  height: 260px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.furniture-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: 0.4s ease;
-}
-
-.furniture-overlay{
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.35s ease;
-  z-index: 2;
-}
-
-.furniture-card:hover .furniture-overlay{
-  opacity: 1;
-}
-
-.furniture-card:hover img{
-  transform: scale(1.06);
-}
-
-.furniture-card-title{
-  font-size: 38px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  font-weight: 800;
-}
-
-.furniture-card-text{
-  font-size: 22px;
-  color: #f8f1e7;
-  margin-bottom: 18px;
-  text-transform: capitalize;
-  font-weight: 600;
-}
-
-.furniture-icons{
-  display: flex;
-  gap: 10px;
-}
-
-.furniture-icons a{
-  width: 42px;
-  height: 42px;
-  background: rgba(255, 255, 255, 0.95);
-  color: #7b4d13;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.3s ease;
-}
-
-.furniture-icons a:hover{
-  background: #ffdb71;
-  color: #5b3c12;
-  transform: translateY(-2px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* DEMO */
-/* -----------News cards---------- */
-.news-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  padding-bottom: 50px;
-}
-
-.news-card{
-  position: relative;
-  height: 380px;
-  overflow: visible;
-  border-radius: 10px;
-}
-
-.news-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-
-
-.news-date{
-  position: absolute;
-  top: 18px;
-  left: -18px;
-  z-index: 3;
-  width: 70px;
-  height: 70px;
-  border-radius: 5px;
-  background: rgba(255, 236, 160, 0.95);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  color: #2d1a06;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.14);
-}
-
-
-.news-hover{
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 25px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.news-btn{
-  margin-top: 0;
-  opacity: 0;
-    text-transform: uppercase;
-}
-
-.news-card:hover .news-hover{
-  opacity: 1;
-}
-
-.news-card:hover .news-btn{
-  opacity: 1;
-}
-
