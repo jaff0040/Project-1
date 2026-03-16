@@ -436,15 +436,18 @@ input{
 
 /* -------- Featured Furniture Section -------- */
 
-.page{
-  width: 80%;
+.featured-furniture-section{
+  width: 100%;
   margin: auto;
   height: 100vh;
+  background-color: #fbdca7a2;
 }
 
 .furniture-section{
   padding: 40px 0 70px;
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 .furniture-section-title{
@@ -545,10 +548,233 @@ input{
 
 
 
+/* -------- Offers Section -------- */
+
+.offers-section{
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.offers-title{
+    font-size: 42px;
+    color: #5b3c12;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.offers-line{
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(163, 100, 22);
+    margin: 0 auto 50px;
+}
+
+.offers-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+
+.offers-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.offers-item{
+    float: left;
+    padding: 25px 18px;
+    text-align: left;
+    border: 1.5px solid rgba(163, 100, 22, 0.35);
+    border-radius: 10px;
+    position: relative;
+    background-color: #fffaf2;
+    transition: 0.4s;
+    min-height: 220px;
+}
+
+.offers-item-center{
+    margin: 0;
+}
+
+.offers-item-top{
+    margin-top: 0;
+}
+
+.offer-icon{
+    font-size: 34px;
+    color: #a36416;
+    margin-bottom: 18px;
+    float: left;
+}
+
+.offers-info{
+  margin-left: 55px;
+}
+
+.offers-info-title{
+    font-size: 22px;
+    color: #2d1a06;
+    margin-bottom: 14px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.offers-info-p{
+    color: rgba(45, 26, 6, 0.65);
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+/* hover */
+.offers-item:hover .offers-info-title{
+    color: #5b3c12;
+}
+
+.offers-item:hover .offer-icon{
+    color: #624900;
+}
+
+.offers-item:hover .offers-info-p{
+    color: #3d2508;
+}
+
+/* after effect from top-left to bottom-right */
+.offers-item::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 219, 113, 0.316);
+    transition: 1s;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.offers-item:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.offers-item > *{
+    position: relative;
+    z-index: 1;
+}
 
 
 
 
+
+
+/* -------- Why Choose Us Section -------- */
+
+.choose-section{
+  width: 100%;
+  padding: 80px 0;
+}
+
+.choose-container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.choose-content{
+  width: 55%;
+}
+
+.choose-title{
+  font-size: 48px;
+  color: #2d1a06;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.choose-line{
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(163, 100, 22);
+  margin-bottom: 35px;
+}
+
+.choose-text{
+  font-size: 22px;
+  line-height: 1.8;
+  color: rgba(45, 26, 6, 0.65);
+  margin-bottom: 35px;
+  width: 95%;
+  word-spacing:1.5px;
+  line-height: 1.3;
+}
+
+.choose-list{
+  list-style: none;
+  margin: 0;
+}
+
+.choose-list li{
+  font-size: 22px;
+  color: rgba(45, 26, 6, 0.75);
+  margin-bottom: 28px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.choose-list li i{
+  color: rgb(163, 100, 22);
+  font-size: 18px;
+}
+
+.choose-image-box{
+  width: 35%;
+  text-align: center;
+}
+
+.choose-image-box img{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.choose-dots{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.choose-dot{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #c9c9c9;
+  display: inline-block;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.choose-dot.active{
+  background-color: rgb(163, 100, 22);
+}
+
+.choose-dot:hover{
+  background-color: #7b4d13;
+}
 
 
 
