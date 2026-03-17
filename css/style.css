@@ -680,6 +680,8 @@ input{
 .choose-section{
   width: 100%;
   padding: 80px 0;
+      height: 100vh;
+
 }
 
 .choose-container{
@@ -689,6 +691,7 @@ input{
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
+
 }
 
 .choose-content{
@@ -697,7 +700,7 @@ input{
 
 .choose-title{
   font-size: 48px;
-  color: #2d1a06;
+  color: #5b3c12;
   margin-bottom: 12px;
   text-transform: capitalize;
 }
@@ -707,17 +710,18 @@ input{
   width: 100px;
   height: 3px;
   background-color: rgb(163, 100, 22);
-  margin-bottom: 35px;
+  margin-bottom: 44px;
 }
 
 .choose-text{
   font-size: 22px;
   line-height: 1.8;
-  color: rgba(45, 26, 6, 0.65);
-  margin-bottom: 35px;
+  color: rgba(112, 60, 5, 0.65);
+  margin-bottom: 44px;
   width: 95%;
   word-spacing:1.5px;
   line-height: 1.3;
+  font-weight:600;
 }
 
 .choose-list{
@@ -727,10 +731,14 @@ input{
 
 .choose-list li{
   font-size: 22px;
-  color: rgba(45, 26, 6, 0.75);
+  color: #5b3c12;
   margin-bottom: 28px;
   font-weight: 600;
   line-height: 1.6;
+
+  display: flex;
+  align-items: center;
+  gap: 0px;   
 }
 
 .choose-list li i{
@@ -738,8 +746,9 @@ input{
   font-size: 18px;
 }
 
+
 .choose-image-box{
-  width: 35%;
+  width: 30%;
   text-align: center;
 }
 
@@ -765,11 +774,10 @@ input{
   background-color: #c9c9c9;
   display: inline-block;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
 .choose-dot.active{
-  background-color: rgb(163, 100, 22);
+  background-color: #7b4d13;
 }
 
 .choose-dot:hover{
