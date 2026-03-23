@@ -1273,7 +1273,7 @@ input{
 .recent-news-card{
     float: left;
     width: 30%;
-    background-color: #fffaf2;
+    background-color: #ffebce;
     border: 1.5px solid rgba(163, 100, 22, 0.35);
     border-radius: 10px;
     padding: 20px 15px 18px;
@@ -1341,11 +1341,12 @@ input{
     font-size: 18px;
     font-weight: 700;
     color: #5b3c12;
+
 }
 
 .recent-news-icons i{
     color: rgb(197, 120, 25);
-    margin-right: 4px;
+    margin-right: -6px;
     font-size: 17px;
 }
 
@@ -1381,7 +1382,7 @@ input{
 
 /* read more */
 .recent-news-more{
-    font-size: 20px;
+    font-size: 18px;
     color: #7b4d13;
     font-weight: 800;
     text-transform: lowercase;
