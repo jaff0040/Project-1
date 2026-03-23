@@ -1416,3 +1416,70 @@ input{
 .recent-news-icons i{
     transition: none;
 }
+
+
+
+
+
+
+/* -------- Footer Section -------- */
+
+.footer-section{
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-color:rgb(252, 230, 187);
+}
+
+/* container */
+.footer-container{
+    width: 80%;
+    margin: auto;
+}
+
+/* image */
+.footer-img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* icons container */
+.footer-icons{
+    margin-bottom: 20px;
+}
+
+/* icons */
+.footer-icons a{
+    display: inline-flex;         
+    align-items: center;          
+    justify-content: center;      
+text-decoration: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    background-color: rgb(251, 217, 155);
+    color: #5b3c12;                      
+
+    font-size: 30px;
+    margin: 0 6px;
+
+    transition: 0.3s;
+}
+
+
+/* hover */
+.footer-icons a:hover{
+    background-color: #5b3c12;    
+    color: rgb(251, 217, 155);     
+}
+
+/* text */
+.footer-text{
+    font-size: 14px;
+    color: #3d2508;
+    font-weight: 600;
+}
