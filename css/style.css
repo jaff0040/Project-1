@@ -1279,7 +1279,7 @@ input{
     padding: 20px 15px 18px;
     position: relative;
     overflow: hidden;
-    min-height: 560px;
+    min-height: 150px;
 }
 
 .recent-news-card-center{
@@ -1340,7 +1340,7 @@ input{
 .recent-news-icons span{
     font-size: 18px;
     font-weight: 700;
-    color: #5b3c12;
+    color: #806034;
 
 }
 
@@ -1353,7 +1353,7 @@ input{
 /* role */
 .recent-news-role{
     font-size: 22px;
-    color: rgb(148, 85, 8);
+    color: rgb(187, 108, 12);
     margin-bottom: 18px;
     font-weight: 800;
     transition: 0.4s;
@@ -1361,30 +1361,34 @@ input{
 
 /* paragraph */
 .recent-news-text{
-    width: 100%;
-    margin: 0 auto 22px;
+    width: calc(100% + 30px); 
+    margin-left: -15px;
+    margin-right: -15px;
     font-size: 15px;
     line-height: 1.3;
-    color: rgba(45, 26, 6, 0.78);
-    font-weight: 600;
-    transition: 0.4s;
-    text-transform: lowercase;
+    color: rgba(103, 60, 14, 0.78);
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
-/* different widths for paragraph */
+
 .recent-news-text-mid{
-    width: 82%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .recent-news-text-small{
-    width: 84%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* read more */
 .recent-news-more{
-    font-size: 18px;
+    font-size: 15px;
     color: #7b4d13;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: lowercase;
     transition: 0.4s;
     cursor: pointer;
