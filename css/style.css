@@ -1164,14 +1164,11 @@ input{
     height: 50px;
     background-color: rgb(251, 217, 155);
     color: #5b3c12;
-
     text-decoration: none;
     font-size: 22px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-left: auto;
     transition: 0.3s;
 }
@@ -1187,7 +1184,7 @@ input{
     margin-bottom: 8px;
     text-transform: capitalize;
     transition: 0.4s;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: 900;
 
 }
@@ -1426,7 +1423,7 @@ input{
 
 .footer-section{
     width: 100%;
-    padding: 60px 0;
+    padding: 16px 0;
     text-align: center;
     background-color:rgb(252, 230, 187);
 }
@@ -1439,47 +1436,43 @@ input{
 
 /* image */
 .footer-img{
-    width: 250px;
+    width: 270px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 /* icons container */
 .footer-icons{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* icons */
-.footer-icons a{
+.footer-icons i{
     display: inline-flex;         
     align-items: center;          
     justify-content: center;      
-text-decoration: none;
-    width: 55px;
-    height: 55px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-
-    background-color: rgb(251, 217, 155);
+    background-color: rgb(246, 206, 132);
     color: #5b3c12;                      
-
-    font-size: 30px;
-    margin: 0 6px;
-
+    font-size: 28px;
     transition: 0.3s;
 }
 
-
-/* hover */
-.footer-icons a:hover{
+.footer-icons i:hover{
     background-color: #5b3c12;    
     color: rgb(251, 217, 155);     
 }
 
-/* text */
 .footer-text{
     font-size: 14px;
     color: #3d2508;
     font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 1px;
+  
 }
