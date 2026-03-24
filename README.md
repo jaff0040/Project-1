@@ -29,7 +29,7 @@ This project focuses on clean UI design, smooth layout structure, and user-frien
 
 ## 📸 Screenshots
 
-_Add screenshots of your project here_
+<img width="1275" height="727" alt="home page" src="https://github.com/user-attachments/assets/09ee005a-983d-4290-be35-18c0a756c272" />
 
 ---
 
