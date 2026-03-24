@@ -37,4 +37,4 @@ This project focuses on clean UI design, smooth layout structure, and user-frien
 
 1. Download or clone the repository:
 ```bash
-git clone https://github.com/your-username/sweet-home-store.git
+git clone https://github.com/jaff0040/Project-1.git
