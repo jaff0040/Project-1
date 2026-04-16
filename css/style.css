@@ -981,12 +981,13 @@ input{
 
 
 
-/* -------- Testimonials Section -------- */
+
+/* -------- testimonials section -------- */
 
 .bg-testimonials-section{
-    height: 70vh;
-
+    height: 50vh;
 }
+
 .testimonials-section{
   width: 100%;
   height: 420px;
@@ -1057,7 +1058,7 @@ input{
   line-height: 1.6;
   max-width: 90%;
   text-transform: capitalize;
-  word-spacing: 2px;
+  word-spacing: 3px;
   color: #fff;
   font-weight: 500;
 
@@ -1069,7 +1070,8 @@ input{
 
 
 
-/* -------- Our Team Section -------- */
+
+/* ----- our team section ----- */
 
 .our-team-section{
     width: 100%;
@@ -1095,7 +1097,7 @@ input{
 .our-team-container{
     width: 80%;
     margin: auto;
-    height: 80%;
+    height: 50%;
 }
 
 .our-team-parent{
@@ -1111,6 +1113,7 @@ input{
     padding: 18px 15px;
     position: relative;
     overflow: hidden;
+    min-height: 350px;
 }
 
 .our-team-item-center{
@@ -1126,7 +1129,7 @@ input{
 
 .our-team-img{
     width: 100%;
-    height: 230px;
+    height: 260px;
     object-fit: cover;
     display: block;
 }
