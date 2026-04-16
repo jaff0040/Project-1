@@ -171,7 +171,7 @@ input{
 
 
 
-/* ----------Hero Banner----------- */
+/* -----hero banner----- */
 
 
 .store-hero{
@@ -246,7 +246,6 @@ input{
     font-weight: 700;
     margin-right: 16px;
     transition: 0.3s ease;
-
 }
 
 
@@ -264,14 +263,14 @@ input{
 .btn2{
     color: rgb(251, 217, 155);
     background-color: 5b3c12;
-    border: rgb(251, 217, 155) solid 2px;
+    border: rgb(251, 217, 155) solid 1px;
 }
 
 .btn2:hover{
-    background-color: rgb(251, 217, 155);
+    background-color: #6b4113;
     color: #6b4113;
-        opacity: .7;
-
+    opacity: .7;
+    color: rgb(251, 217, 155);
 }
 
 
@@ -280,17 +279,7 @@ input{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* -------- Features Section -------- */
+/* -------- features section -------- */
 
 .features-section{
     width: 100%;
@@ -331,7 +320,8 @@ input{
 .features-item{
     float: left;
     width: 30%;
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
+        padding: 30px 0;
     text-align: center;
     border: 1.5px solid rgba(163, 100, 22, 0.35);
     border-radius: 10px;
@@ -350,6 +340,10 @@ input{
     margin-bottom: 20px;
 }
 
+.features-info{
+    padding: 0 0px;
+}
+
 .features-info-title{
     font-size: 22px;
     color: #2d1a06;
@@ -359,11 +353,16 @@ input{
 
 .features-info-p{
     color: rgba(45, 26, 6, 0.7);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
     text-transform: capitalize;
     word-spacing: 1px;
+
+    /* margin-left: -20px;  
+    margin-right: -20px; */
+    width: 100%;
+
 }
 
 .features-link{
