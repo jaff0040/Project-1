@@ -777,6 +777,8 @@ input{
 
 
 
+
+
 /* -------- stats section -------- */
 
 .stats-section{
@@ -844,8 +846,7 @@ input{
 
 
 
-
-/* -------- Pricing Section -------- */
+/* -------- pricing section -------- */
 
 .pricing-section{
     width: 100%;
@@ -913,7 +914,7 @@ input{
 
 .pricing-card-title{
     font-size: 22px;
-    color: rgb(148, 85, 8);
+    color: rgba(148, 85, 8, 0.795);
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 28px;
@@ -941,7 +942,7 @@ input{
 }
 
 .pricing-unit{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: #623d0f;
     margin-top: 8px;
