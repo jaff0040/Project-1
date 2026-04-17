@@ -21,8 +21,8 @@ This project focuses on clean UI design, smooth layout structure, and user-frien
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3 (Flexbox & Grid)
+- HTML
+- CSS (Flexbox & Grid)
 - Font Awesome (icons)
 
 ---
