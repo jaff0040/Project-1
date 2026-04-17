@@ -12,14 +12,16 @@ body{
   word-spacing: 3px;
   background-color:rgb(255, 238, 217) ;
 }
+
+/* -----main colors----- */
+
 /* rgba(244, 195, 136, 1) */
 /* rgba(136, 165, 173, 1) */
 /* rgba(240, 180, 108, 1) */
 
 
 
-/* ----------Header----------- */
-
+/* -----header----- */
 
 .header{
   left: 0;
@@ -51,7 +53,8 @@ input{
   align-items: center;
 }
 
-/* header icons container */
+
+
 .header-icon{
   display:flex;
   align-items:center;
@@ -60,12 +63,14 @@ input{
 }
 
 
-/* search field */
+
+
 .field{
   position:relative;
 }
 
-/* input */
+
+
 .field input{
   width:220px;
   padding:8px 10px 8px 35px;
@@ -75,7 +80,8 @@ input{
   font-size:14px;
 }
 
-/* search icon */
+
+
 .field i{
   position:absolute;
   left:12px;
@@ -90,7 +96,6 @@ input{
   list-style: none;
   display: flex;
   margin-right: 80px;
-  /* float: right; */
   text-transform: capitalize;
 
 }
@@ -127,12 +132,15 @@ input{
 }
 
 
-/* dropdown container */
+
+
 .dropdown{
   position: relative;
 }
 
-/* menu */
+
+
+
 .dropdown-menu{
   position: absolute;
   top: 35px;
@@ -171,8 +179,10 @@ input{
 
 
 
-/* -----hero banner----- */
 
+
+
+/* -----hero banner----- */
 
 .store-hero{
     position: relative;
@@ -837,6 +847,11 @@ input{
 }
 
 
+
+
+
+
+
 /* -------- pricing section -------- */
 
 .pricing-section{
@@ -1434,5 +1449,4 @@ input{
     font-weight: 600;
     text-transform: uppercase;
     word-spacing: 1px;
-  
 }
